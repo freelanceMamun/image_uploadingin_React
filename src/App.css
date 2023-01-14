@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+
+  height: 100vw;
+
+  position: relative;
+}
+main {
+  max-width: 1240px;
+  margin: auto;
+  position: relative;
+  height: 100%;
+}
+.imageContainer .image {
+  margin-top: 20px;
+}
+.imageContainer .image .imgBox {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; */
+  gap: 20px;
+  columns: 4;
+}
+
+.imageContainer .image .imgBox div img {
+  width: 100%;
+  height: 100%;
+}
+
+.Title {
+  font-weight: 500;
+  text-align: center;
+}
+.imageFileCom {
+  height: 100%;
+  width: 100%;
+  background-color: #4040448a;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  z-index: 5;
+}
+
+.wrapper {
+  width: 430px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  position: absolute;
+  box-shadow: 0px 5px 20px rgb(156, 152, 152);
+  z-index: 5;
+}
+
+.wrapper header {
+  color: #6990f2;
+  font-size: 27px;
+  font-weight: 600;
+  text-align: center;
+}
+.wrapper form label {
+  border: 2px dashed #6990f2;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 168px;
+  margin: 30px 0;
+  flex-direction: column;
+  cursor: pointer;
+}
+form :where(i, p) {
+  color: #6990f2;
+}
+form i {
+  font-size: 50px;
+}
+form p {
+  font-size: 16px;
+  margin-top: 15px;
+}
+section .row {
+  background-color: #e9f0ff;
+  margin-bottom: 10px;
+  list-style: none;
+  padding: 12px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+section .row i {
+  font-size: 30px;
+  color: #6990f2;
+}
+section .details span {
+  font-size: 14px;
+}
+.progress-area .row .content {
+  width: 100%;
+  margin-left: 15px;
+}
+
+.progress-area .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+.upolad-area .row .content {
+  display: flex;
+  align-items: center;
+}
+.upolad-area .row .details {
+  display: flex;
+  margin-left: 15px;
+  flex-direction: column;
+}
+
+.upolad-area .row .size {
+  font-size: 11px;
+  color: #404040;
+}
+.upolad-area .fa-check {
+  font-size: 16px;
+  color: #6990f2;
+}
+.progress-bar {
+  height: 6px;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 4px;
+  border-radius: 30px;
+}
+
+.progress-bar .progress {
+  background: #6990f2;
+
+  height: 100%;
+  border-radius: inherit;
+}
+
+.upolad-area {
+  max-height: 200px;
+  overflow-y: scroll;
+}
+.upolad-area::-webkit-scrollbar {
+  width: 0px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 5%;
+  left: 4%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.uploadBtn button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #404040;
+  color: #fff;
+  padding: 5px 10px;
+  width: 130px;
+  display: block;
+  margin-left: auto;
+}
+.imageFileCom .previeweImg {
+  width: 800px;
+  height: 600px;
+  box-shadow: 3px 2px 25px rgb(131, 120, 120);
+  background-color: #fff;
+  padding: 6px;
+}
+.imageFileCom .previeweImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 5;
+}
+
+@media screen and (max-width: 768px) {
+  .imageContainer .image .imgBox {
+    columns: 2;
+    gap: 15px;
+  }
+}
+
+.AudioCart {
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  box-shadow: 0px 0px 20px #c0c0c0;
+}
+.AudioCart svg {
+  font-size: 50px;
+}
+
+.img-wrap {
+  overflow: hidden;
+}
